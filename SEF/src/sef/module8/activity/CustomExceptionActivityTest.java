@@ -10,11 +10,11 @@ public class CustomExceptionActivityTest {
     public static void main(String[] args) {
         try {
             CustomExceptionActivityTest customExceptionActivityTest = new CustomExceptionActivityTest();
-            customExceptionActivityTest.validateUser("John");
-            customExceptionActivityTest.validateUser("Mike");
-            customExceptionActivityTest.validateUser("Shanti");
-            customExceptionActivityTest.validateUser("Stacie");
-            customExceptionActivityTest.validateUser("Jack");
+            customExceptionActivityTest.validateUser("Eldar");
+            customExceptionActivityTest.validateUser("Edwin");
+            customExceptionActivityTest.validateUser("Elena");
+            customExceptionActivityTest.validateUser("Edgar");
+            customExceptionActivityTest.validateUser("Elizabeth");
         }
         catch(CustomExceptionActivity e) {
             System.out.println(e.getMessage());
@@ -24,7 +24,7 @@ public class CustomExceptionActivityTest {
     void validateUser(String name) throws CustomExceptionActivity {
         CustomExceptionActivity customExceptionActivity = new CustomExceptionActivity();
         //array of names
-        String[] validUsers = {"John","Mike","Shanti","Stacie"};
+        String[] validUsers = {"Eldar","Edwin","Elena","Edgar"};
         //flag stores 1 if a match is found else it should remain 0
         int flag = 0;
         for (int i = 0; i < 4; i++)
