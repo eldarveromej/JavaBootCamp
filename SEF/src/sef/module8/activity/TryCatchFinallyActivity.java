@@ -8,7 +8,7 @@ public class TryCatchFinallyActivity {
 		TryCatchFinallyActivity obj = new TryCatchFinallyActivity();
 		obj.catchMeIfYouCan(); //This failed
 
-		System.out.println("You are visitor Number 100");
+		System.out.println("You are visitor Number 10101");
 	}
 
 	void catchMeIfYouCan()
