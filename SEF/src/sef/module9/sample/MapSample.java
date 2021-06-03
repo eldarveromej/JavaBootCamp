@@ -16,7 +16,7 @@ public class MapSample {
 		map.put("C", new Integer(42));
 		map.put("D", new Float(23.0f));
 		//Beware of using the same key twice cause it will overwrite the value
-		//map.put("1", "Same key as A String");
+		map.put("A", "Same key as A String");
 		
 		System.out.println(map.get("A"));
 		System.out.println(map.get("B"));
