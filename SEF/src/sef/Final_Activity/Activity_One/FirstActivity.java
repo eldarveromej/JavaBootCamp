@@ -21,7 +21,7 @@ public class FirstActivity {
         employeeList.add(april);
         employeeList.add(melon);
 
-        employeeList.forEach(Employee::setintroducePerson);
+        employeeList.forEach(Employee::setIntroducePerson);
 
         employeeList.sort(Comparator.comparingInt(Employee::getSalary).reversed());
 

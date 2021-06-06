@@ -1,11 +1,14 @@
 package sef.Final_Activity.Activity_One;
 
-import sef.Final_Activity.Activity_Two.PersonException;
-
 public class Person {
+    public Person(String name, int age) {
+        this.name = checkIfContainsNumbers(name);
+        this.age = age;
+    }
+
     public Person(String name, String surname, int age) {
         this.name = name;
-        this.surname = surname;
+        this.surname = checkIfContainsNumbers(surname);
         this.age = age;
     }
 
@@ -40,7 +43,7 @@ public class Person {
     public String introducePerson() {
         return String.format("My name is %s and I am %d years old", getName(), getAge());
     }
-    public void setintroducePerson() {
+    public void setIntroducePerson() {
         System.out.printf("My name is %s and I am %d years old " + "\n", getName(), getAge());
     }
 

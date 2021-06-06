@@ -1,7 +1,6 @@
-package sef.Final_Activity.Activity_Two;
+package sef.Final_Activity.Activity_One;
 import sef.Final_Activity.Activity_One.Person;
-
-public class PersonExceptionExample {
+public class PersonExceptionExample  {
         public static void main(String[] args) {
             try {
                 Person candy = new Person("Antony41","Papa", 12);

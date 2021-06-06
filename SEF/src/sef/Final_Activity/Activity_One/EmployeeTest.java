@@ -1,7 +1,7 @@
 //package sef.Final_Activity.Activity_One;
 //
 //import org.junit.Test;
-//import sef.Final_Activity.Activity_Two.PersonException;
+//import sef.Final_Activity.Activity_One.PersonException;
 //
 //import static org.junit.Assert.assertEquals;
 //
