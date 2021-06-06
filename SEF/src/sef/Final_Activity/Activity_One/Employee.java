@@ -1,16 +1,23 @@
 package sef.Final_Activity.Activity_One;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+
 public class Employee extends Person {
 
     private String jobTitle;
     private String company;
     private int salary;
 
-    public Employee(String name, int age, String jobTitle, String company, int salary) {
-        super(name, age);
+    public Employee(String name, String surname, int age, String jobTitle, String company, int salary) {
+        super(name, surname, age);
         this.jobTitle = jobTitle;
         this.company = company;
         this.salary = salary;
+    }
+    public Employee(String name, String surname,int age){
+        super(name, surname, age);
     }
 
     public String getJobTitle() {
@@ -39,8 +46,8 @@ public class Employee extends Person {
 
 
     @Override
-    public void introducePerson() {
-        System.out.printf("My name is %s and I am %d years old. I am working as %s in %s." + "\n", getName(), getAge(), getJobTitle(), getCompany());
+    public String introducePerson() {
+        return String.format("My name is %s and I am %d years old. I am working as %s in %s. " + "\n", getName(), getAge(), getJobTitle(), getCompany());
     }
 
     @Override
@@ -50,5 +57,19 @@ public class Employee extends Person {
                 ", company='" + company + '\'' +
                 ", salary=" + salary +
                 '}';
+    }
+    public static void writeEmployeeToTheFile(List<Employee> employees) {
+        try {
+            FileWriter myWriter = new FileWriter("employees.txt");
+            for(Employee employee : employees)
+                myWriter.append(String.format("Name: %s. Job title: %s. Company: %s. Salary: %s.\n", employee.getName(), employee.getJobTitle(), employee.getCompany(), employee.getSalary()));
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+}
     }
 }
