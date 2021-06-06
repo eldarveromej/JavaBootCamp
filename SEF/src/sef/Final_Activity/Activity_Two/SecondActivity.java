@@ -2,19 +2,19 @@ package sef.Final_Activity.Activity_Two;
 
 public class SecondActivity {
 
-        public int getSum(int a, int b) {
+        public int add(int a, int b) {
             return a + b;
         }
 
-        public int getDifference(int a, int b) {
+        public int subtract(int a, int b) {
             return a - b;
         }
 
-        public double getProduct(double a, double b) {
+        public double multiply(double a, double b) {
             return a * b;
         }
 
-        public double getQuotient(double a, double b) {
+        public double divide(double a, double b) {
             try {
                 return a / b;
             }
