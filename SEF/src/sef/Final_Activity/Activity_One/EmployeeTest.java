@@ -35,8 +35,8 @@
 //    @Test()
 //    public void nameAge() {
 //        Employee e = new Employee();
-//        e.setAge(20);
-//        assertEquals(20, e.getAge());
+//        e.setAge(24);
+//        assertEquals(24, e.getAge());
 //    }
 //
 //    @Test
@@ -44,7 +44,7 @@
 //        Employee e = new Employee();
 //        e.setAge(24);
 //        e.setName("Eldar");
-//        assertEquals("My name is Danik and I am 20 years old", e.introducePerson());
+//        assertEquals("My name is Eldar and I am 24 years old", e.introducePerson());
 //                                }
 //}
 //
