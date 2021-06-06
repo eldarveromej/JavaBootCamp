@@ -9,6 +9,10 @@ public class Employee extends Person {
     private String jobTitle;
     private String company;
     private int salary;
+    public Employee(){
+        this.jobTitle = jobTitle;
+        this.company = company;
+        this.salary = salary;}
 
     public Employee(String name, String surname, int age, String jobTitle, String company, int salary) {
         super(name, surname, age);
