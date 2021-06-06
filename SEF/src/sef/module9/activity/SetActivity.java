@@ -13,18 +13,18 @@ public class SetActivity {
 		//Names must be sorted by their natural order.
 		//Do research to find if you already have such a class. 
 		//Also try adding a few duplicate entries to this set.
-		Set name = new HashSet();
+		Set nameset = new HashSet();
 
-		name.add("Eldar");
-		name.add("Akaki");
-		name.add("Edwin");
-		name.add("Zina");
-		name.add("Dobrynya");
-		name.add("Bob");
+		nameset.add("Eldar");
+		nameset.add("Akaki");
+		nameset.add("Edwin");
+		nameset.add("Zina");
+		nameset.add("Dobrynya");
+		nameset.add("Bob");
 		
 		
 		//2 - Call print method to print the set passed as its parameter.
-		print(name);
+		print(nameset);
 	}
 	
 	static void print(Set set)
@@ -38,3 +38,4 @@ public class SetActivity {
 
 	}
 }
+
