@@ -1,6 +1,11 @@
 package sef.Final_Activity.Activity_One;
 
 public class Person {
+    public Person() {
+        this.name = checkIfContainsNumbers(name);
+        this.surname = surname;
+        this.age = age;
+    }
     public Person(String name, int age) {
         this.name = checkIfContainsNumbers(name);
         this.age = age;
@@ -21,7 +26,7 @@ public class Person {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = checkIfContainsNumbers(name);
     }
 
     public int getAge() {
